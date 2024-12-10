@@ -1,30 +1,27 @@
 export const lightTheme = {
   colors: {
-    primary: "#FF6F61",
-    secondary: "#009688",
-    accent: "#f06529",
-    background: "#f8f9fa",
+    primary: "#007C7F",
+    secondary: "#D89D9D",
+    background: "#F4F4F4",
     text: "#333",
     textLight: "#fff",
     shadow: "rgba(0, 0, 0, 0.5)",
-    button: "#009688",
+    button: "#D89D9D",
     buttonText: "#fff",
-    gradient: "linear-gradient(135deg, #FF6F61, #009688)",
-   
+    gradient: "linear-gradient(135deg, #007C7F, #D89D9D)",
   },
 };
 
 export const darkTheme = {
   colors: {
-    primary: "#FF6F61",
-    secondary: "#009688",
-    accent: "#f06529",
-    background: "#333",
-    text: "#f8f9fa",
-    textLight: "#333",
-    shadow: "rgba(0, 0, 0, 0.4)",
-    button: "#009688",
-    buttonText: "#fff",
-    gradient: "linear-gradient(135deg, #FF6F61, #009688)",
+    primary: "#006F6B", 
+    secondary: "#B46B6B", 
+    background: "#2C2C2C", 
+    text: "#E0E0E0", 
+    textLight: "#333", 
+    shadow: "rgba(255, 255, 255, 0.05)", 
+    button: "#B46B6B", 
+    buttonText: "#fff", 
+    gradient: "linear-gradient(135deg, #004F4F, #B46B6B)",
   },
 };
