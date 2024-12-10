@@ -8,7 +8,7 @@ export const AboutSection = styled.section`
   h2 {
     font-size: 2rem;
     font-weight: 700;
-    color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.secondary};
     margin-bottom: 3rem;
     text-decoration: underline;
   }

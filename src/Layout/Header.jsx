@@ -14,8 +14,8 @@ const PortfolioHeader = ({ toggleTheme }) => {
 
   return (
     <HeaderContainer>
-      <NavContainer className="navbar navbar-expand-lg navbar-light w-100">
-        <div className="container col-12 col-md-10 col-lg-8 m-auto">
+      <NavContainer className="navbar navbar-expand-md navbar-light w-100">
+        <div className="container col-10  col-lg-8 m-auto">
           <button
             className="navbar-toggler"
             type="button"
@@ -28,7 +28,7 @@ const PortfolioHeader = ({ toggleTheme }) => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <button onClick={handleToggleTheme} className="btn">
-            <FontAwesomeIcon icon={isDarkMode ? faSun : faMoon} size="lg" />
+            <FontAwesomeIcon icon={isDarkMode ? faSun : faMoon} size="lg" /> Mode
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <div className="justify-content-evenly w-100 d-block d-md-flex align-items-center">

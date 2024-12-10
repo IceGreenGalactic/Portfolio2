@@ -21,7 +21,7 @@ export const NavContainer = styled.nav`
   }
 
   .btn {
-    background: ${({ theme }) => theme.colors.secondary};
+    background: transparent;
     color: ${({ theme }) => theme.colors.textLight};
     border: none;
     padding: 10px 20px;
