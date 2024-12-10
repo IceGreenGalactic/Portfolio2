@@ -11,6 +11,11 @@ import {
 } from "./ProjectSection.styled";
 import HolidazePcImage from "../../assets/images/HolidazePc.png";
 import HolidazePhoneImage from "../../assets/images/HolidazePhone.png";
+import EccohPcImage from "../../assets/images/EccohPc.png";
+import EccohPhoneImage from "../../assets/images/EccohPhone.png";
+import AuctionHousePcImage from "../../assets/images/AuctionHousePc.png";
+import AuctionHousePhoneImage from "../../assets/images/AuctionHousePhone.png";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
@@ -21,48 +26,49 @@ const ProjectSection = () => {
       id: 1,
       title: "Holidaze",
       description:
-        "Holidaze is a modern platform for booking vacation rentals and exploring travel destinations.",
-      liveLink: "#",
-      githubLink: "#",
+        "A responsive platform for booking accommodations, created as part of a Noroff assignment. Features include venue search, detailed info pages, admin tools for managing listings, and API integration for dynamic data.",
+      liveLink: "https://holidazehouses.netlify.app/",
+      githubLink:
+        "https://github.com/IceGreenGalactic/ProjectExam2-Holidayz.git",
       pcImage: HolidazePcImage,
       phoneImage: HolidazePhoneImage,
     },
     {
       id: 2,
-      title: "Project Two",
+      title: "Eccoh",
       description:
-        "Explore the features of Project Two. It's fast, reliable, and built for performance.",
-      liveLink: "#",
-      githubLink: "#",
-      pcImage: HolidazePcImage,
-      phoneImage: HolidazePhoneImage,
+        "An e-commerce webshop built using React and Redux,created as part of a Noroff assignment. Offering cart management, search, and API integration for dynamic product listings.",
+      liveLink: "https://eccho.netlify.app/",
+      githubLink: "https://github.com/IceGreenGalactic/webshop-react-CA.git",
+      pcImage: EccohPcImage,
+      phoneImage: EccohPhoneImage,
     },
     {
       id: 3,
-      title: "Project Three",
+      title: "AuctionHouse",
       description:
-        "Dive into Project Three, a modern application with cutting-edge technology.",
-      liveLink: "#",
-      githubLink: "#",
-      pcImage: HolidazePcImage,
-      phoneImage: HolidazePhoneImage,
+        "An auction platform developed as part of a Noroff assignment. Users can list items, place bids, and manage profiles, with responsive design and real-time updates.",
+      liveLink: "https://auction-houze.netlify.app/",
+      githubLink: "https://github.com/IceGreenGalactic/semesterProject2.git",
+      pcImage: AuctionHousePcImage,
+      phoneImage: AuctionHousePhoneImage,
     },
   ];
 
   return (
-    <Section>
+    <Section className="d-block d-md-flex flex-wrap justify-content-between">
       {projects.map((project) => (
-        <Card key={project.id}>
-          <ImageContainer>
+        <Card key={project.id} className="col-12 col-md-10 col-lg-5 mb-4">
+          <ImageContainer className="text-center">
             <PcImage src={project.pcImage} alt={`${project.title} on PC`} />
             <PhoneImage
+              className="img img-fluid col-2"
               src={project.phoneImage}
               alt={`${project.title} on Phone`}
             />
           </ImageContainer>
           <ProjectTitle>{project.title}</ProjectTitle>
           <ProjectDescription>{project.description}</ProjectDescription>
-
           <Buttons>
             <a
               href={project.liveLink}
@@ -70,8 +76,7 @@ const ProjectSection = () => {
               rel="noopener noreferrer"
               className="live"
             >
-              <FontAwesomeIcon icon={faExternalLinkAlt} />
-              Live Site
+              <FontAwesomeIcon icon={faExternalLinkAlt} /> Live Site
             </a>
             <a
               href={project.githubLink}
@@ -79,8 +84,7 @@ const ProjectSection = () => {
               rel="noopener noreferrer"
               className="github"
             >
-              <FontAwesomeIcon icon={faGithub} />
-              GitHub
+              <FontAwesomeIcon icon={faGithub} /> GitHub
             </a>
           </Buttons>
         </Card>

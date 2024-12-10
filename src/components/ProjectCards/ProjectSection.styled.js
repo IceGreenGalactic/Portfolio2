@@ -7,6 +7,9 @@ export const Section = styled.section`
 `;
 
 export const Card = styled.div`
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
   max-width: 900px;
   padding: 20px;
   border-radius: 15px;
@@ -15,7 +18,6 @@ export const Card = styled.div`
   margin: 40px auto;
 `;
 
-// Image container styles (simplified)
 export const ImageContainer = styled.div`
   margin-bottom: 1.5rem;
 `;
@@ -27,7 +29,6 @@ export const PcImage = styled.img`
 `;
 
 export const PhoneImage = styled.img`
-  width: 25%;
   height: auto;
   object-fit: contain;
 `;
@@ -49,6 +50,8 @@ export const ProjectDescription = styled.p`
 export const Buttons = styled.div`
   display: flex;
   justify-content: space-around;
+  gap: 5px;
+  
 
   a {
     display: inline-flex;
