@@ -6,11 +6,11 @@ const About = () => {
     <AboutSection className="d-block justify-content-center">
       <h2 className="text-center">Here's a little about me</h2>
 
-      <div className="row justify-content-center col-12 col-md-10 m-auto mb-3">
+      <div className="row justify-content-center col-10 col-md-10 m-auto mb-3">
 
 
-        <div className="col-12 col-md-6 mb-4 d-flex">
-          <Card className="p-3 d-flex flex-column">
+        <div className="col-12 col-md-6 mb-4 ">
+          <Card className="p-3 h-100 d-flex flex-column">
             <h3>🌈 Personal Life</h3>
             <p>33-year-old parent to an awesome kid.</p>
             <p>Always on the lookout for new adventures and challenges.</p>
@@ -21,8 +21,8 @@ const About = () => {
         </div>
 
 
-        <div className="col-12 col-md-6 mb-4 d-flex">
-          <Card className="p-3 d-flex flex-column">
+        <div className="col-12 col-md-6 mb-4">
+          <Card className="p-3 h-100 d-flex flex-column">
             <h3>🎓 Studies</h3>
             <p>Bachelor: Kindergarten Teacher Studies</p>
             <p>Master's: Special Needs Education</p>
@@ -34,10 +34,10 @@ const About = () => {
       </div>
 
  
-      <div className="row justify-content-center col-12 col-md-10 m-auto">
+      <div className="row justify-content-center col-10 col-md-10 m-auto">
         
-        <div className="col-12 col-md-6 mb-4 d-flex">
-          <Card className="p-3 d-flex flex-column">
+        <div className="col-12 col-md-6 mb-4">
+          <Card className="p-3 h-100 d-flex flex-column">
             <h3>🍎 My Career Journey</h3>
             <p>
               I’m Kristine, a dedicated educator turned frontend developer. With a Master's in Special Needs Education and extensive experience as a kindergarten teacher, I’ve honed my ability to communicate, plan, and solve problems effectively.
@@ -48,9 +48,9 @@ const About = () => {
           </Card>
         </div>
 
-        {/* Looking Forward Card */}
+
         <div className="col-12 col-md-6 mb-4 d-flex">
-          <Card className="p-3 d-flex flex-column">
+          <Card className="p-3 h-100 d-flex flex-column">
             <h3>🚀 Looking Forward</h3>
             <p>
               Now that I’ve completed my studies, I’m excited to start my career in frontend development. I’m passionate about creating websites that are not only functional but also visually appealing and accessible to all users. 

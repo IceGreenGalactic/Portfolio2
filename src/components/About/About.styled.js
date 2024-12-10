@@ -16,7 +16,7 @@ export const AboutSection = styled.section`
 
 
 export const Card = styled.div`
-  max-width: 450px;
+  max-width: 850px;
   border-radius: 10px;
   box-shadow: 0 2px 6px ${(props) => props.theme.colors.shadow};
   color: ${({ theme }) => theme.colors.text};
