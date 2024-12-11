@@ -56,7 +56,10 @@ const ProjectSection = () => {
   ];
 
   return (
-    <Section className="d-block d-md-flex flex-wrap justify-content-between">
+    <Section
+      className="d-block d-md-flex flex-wrap justify-content-between"
+      id="projects"
+    >
       {projects.map((project) => (
         <Card key={project.id} className="col-12 col-md-10 col-lg-5 mb-4">
           <ImageContainer className="text-center">

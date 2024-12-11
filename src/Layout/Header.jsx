@@ -43,9 +43,9 @@ const PortfolioHeader = ({ toggleTheme }) => {
               </NavItem>
               <NavItem
                 className="d-block d-md-flex mt-2 mt-md-0"
-                href="#skills"
+                href="#technologies"
               >
-                Skills
+                technologies
               </NavItem>
               <NavItem className="d-block d-md-flex mt-2 mt-md-0" href="#about">
                 About
