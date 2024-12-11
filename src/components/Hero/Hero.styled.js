@@ -7,6 +7,8 @@ export const HeroSection = styled.section`
   flex-direction: column;
   min-height: 50vh;
   text-align: center;
+  background: ${({ theme }) => theme.colors.gradient};
+  width: 100%;
 `;
 
 export const Name = styled.h1`

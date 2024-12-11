@@ -5,8 +5,12 @@ export const HeaderContainer = styled.header`
   color: ${({ theme }) => theme.colors.textLight};
   display: flex;
   flex-direction: column;
-  min-height: 50vh;
+  
   padding: 0;
+    position: sticky;
+  top: 0;
+  z-index: 1000;
+
 `;
 
 export const NavContainer = styled.nav`
@@ -14,6 +18,8 @@ export const NavContainer = styled.nav`
   display: flex;
   padding: 50px 0px 10px 0px;
   box-shadow: 0 4px 6px ${({ theme }) => theme.colors.shadow};
+
+
 
   div {
     display: flex;

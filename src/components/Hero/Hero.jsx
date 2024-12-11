@@ -21,14 +21,13 @@ const Hero = () => {
         </ProfileImageWrapper>
         <HeroText className="text-center text-sm-start">
           <Name>I am Kristine Tyrholm</Name>
-        <Name>I am Kristine Tyrholm</Name>
-          <h4>  A kindergarten teacher transitioning into front-end development.</h4>
+          <h4>
             A kindergarten teacher transitioning into front-end development.
           </h4>
           <p>
             With a passion for creativity and problem-solving, I’m combining my
             skills in communication, patience, and collaboration to create
-            user-friendly, impactful web applications.{" "}
+            user-friendly, impactful web applications.
           </p>
         </HeroText>
       </HeroContent>

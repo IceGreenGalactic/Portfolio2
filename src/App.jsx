@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Layout from "./Layout/Layout";
+import Hero from "./components/Hero/Hero";
 import ProjectSection from "./components/ProjectCards/ProjectSection";
 import About from "./components/About/About";
 import Technologies from "./components/Technologies/Technologies";
@@ -19,6 +20,7 @@ function App() {
     <>
       <ThemeProvider theme={theme}>
         <Layout toggleTheme={toggleTheme}>
+          <Hero />
           <ProjectSection />
           <Technologies />
           <About />

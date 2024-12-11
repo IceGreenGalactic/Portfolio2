@@ -55,7 +55,7 @@ const PortfolioHeader = ({ toggleTheme }) => {
         </div>
       </NavContainer>
 
-      <Hero />
+
     </HeaderContainer>
   );
 };
