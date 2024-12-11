@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { slideInFromBottom, slideInFromLeft } from "../animations";
 
 export const Section = styled.section`
   padding: 3rem 1rem;
@@ -16,6 +17,8 @@ export const Card = styled.div`
   background: ${(props) => props.theme.colors.background};
   box-shadow: 0 2px 6px ${(props) => props.theme.colors.shadow};
   margin: 40px auto;
+  animation: ${slideInFromLeft} 0.8s ease-out;
+
 `;
 
 export const ImageContainer = styled.div`

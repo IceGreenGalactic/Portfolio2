@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { slideInFromLeft, slideInFromRight } from "../animations";
 
 export const HeroSection = styled.section`
   display: flex;
@@ -28,6 +29,7 @@ export const HeroContent = styled.div`
 export const ProfileImageWrapper = styled.div`
   flex: 1;
   text-align: center;
+  animation: ${slideInFromLeft} 1s ease forwards;
 `;
 
 export const ProfileImage = styled.img`
@@ -43,6 +45,7 @@ export const HeroText = styled.div`
   text-align: left;
   padding: 20px;
   color: ${({ theme }) => theme.colors.textLight};
+  animation: ${slideInFromRight} 1s ease forwards;
 
   h2 {
     margin-bottom: 10px;

@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import animations from "../components/animations";
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -17,6 +18,9 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Arial', sans-serif;
      min-height: 100vh;
   }
+
+  
+    ${animations.fadeIn}
 `;
 
 export default GlobalStyle;
