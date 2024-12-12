@@ -13,7 +13,7 @@ export const HeroSection = styled.section`
 `;
 
 export const Name = styled.h1`
-  color: ${({ theme }) => theme.colors.textLight};
+  color: ${({ theme }) => theme.colors.textHeader};
   margin-bottom: 20px;
   font-family: "Arial", sans-serif;
 `;
@@ -44,7 +44,7 @@ export const HeroText = styled.div`
   flex: 2;
   text-align: left;
   padding: 20px;
-  color: ${({ theme }) => theme.colors.textLight};
+  color: ${({ theme }) => theme.colors.textHeader};
   animation: ${slideInFromRight} 1s ease forwards;
 
   h2 {

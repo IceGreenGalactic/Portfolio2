@@ -28,7 +28,7 @@ export const NavContainer = styled.nav`
 
   .btn {
     background: transparent;
-    color: ${({ theme }) => theme.colors.textLight};
+    color: ${({ theme }) => theme.colors.textHeader};
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -42,7 +42,7 @@ export const NavContainer = styled.nav`
 `;
 
 export const NavItem = styled.a`
-  color: ${({ theme }) => theme.colors.textLight};
+  color: ${({ theme }) => theme.colors.textHeader};
   text-decoration: none;
   text-transform: uppercase;
   transition: color 0.3s;
