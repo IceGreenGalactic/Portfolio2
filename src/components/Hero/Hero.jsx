@@ -12,7 +12,7 @@ import profileImage from "../../assets/images/mini-snow-warrior.jpg";
 const Hero = () => {
   return (
     <HeroSection
-      className="col-md-10 col-lg-8 m-auto col-11 align-items-center m-auto justify-content-center"
+      className="col-md-10 col-lg-8 m-auto col-11 align-items-center m-auto justify-content-center pt-2 pt-md-0"
       id="home"
     >
       <HeroContent className="d-block d-sm-flex ">

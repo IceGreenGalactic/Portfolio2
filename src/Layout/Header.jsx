@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { HeaderContainer, NavContainer, NavItem } from "./Header.styled";
+import { HeaderContainer, NavContainer, NavItem, ModeButtonContainer } from "./Header.styled";
 import Hero from "../components/Hero/Hero";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
@@ -27,9 +27,7 @@ const PortfolioHeader = ({ toggleTheme }) => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <button onClick={handleToggleTheme} className="btn">
-            <FontAwesomeIcon icon={isDarkMode ? faSun : faMoon} size="lg" /> Mode
-          </button>
+         
           <div className="collapse navbar-collapse" id="navbarNav">
             <div className="justify-content-evenly w-100 d-block d-md-flex align-items-center">
               <NavItem className="d-block d-md-flex mt-2 mt-md-0" href="#home">
@@ -50,6 +48,9 @@ const PortfolioHeader = ({ toggleTheme }) => {
               <NavItem className="d-block d-md-flex mt-2 mt-md-0" href="#about">
                 About
               </NavItem>
+              <ModeButtonContainer onClick={handleToggleTheme} className="mt-2 mt-md-0">
+                <FontAwesomeIcon icon={isDarkMode ? faSun : faMoon} size="lg" /> Mode
+              </ModeButtonContainer>
             </div>
           </div>
         </div>

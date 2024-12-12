@@ -5,12 +5,11 @@ export const HeaderContainer = styled.header`
   color: ${({ theme }) => theme.colors.textLight};
   display: flex;
   flex-direction: column;
-  
+
   padding: 0;
-    position: sticky;
+  position: sticky;
   top: 0;
   z-index: 1000;
-
 `;
 
 export const NavContainer = styled.nav`
@@ -19,24 +18,25 @@ export const NavContainer = styled.nav`
   padding: 50px 0px 10px 0px;
   box-shadow: 0 4px 6px ${({ theme }) => theme.colors.shadow};
 
-
-
   div {
     display: flex;
     gap: 20px;
   }
 
-  .btn {
+  .navbar-toggler {
     background: transparent;
     color: ${({ theme }) => theme.colors.textHeader};
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s ease;
 
     &:hover {
       background: ${({ theme }) => theme.colors.primary};
+    }
+
+    .navbar-toggler-icon{
+        font-size: 1.4rem;
+
     }
   }
 `;
@@ -49,6 +49,22 @@ export const NavItem = styled.a`
   font-family: ${({ theme }) => theme.fonts.header};
   &:hover {
     color: ${({ theme }) => theme.colors.primary};
+  }
+`;
+export const ModeButtonContainer = styled.button`
+  background: transparent;
+  color: ${({ theme }) => theme.colors.textLight};
+  border: none;
+  padding: 5px 0px;
+  font-size: 0.875rem;
+  border-radius: 5px;
+  cursor: pointer;
+  filter: brightness(0.85);
+
+  &:hover {
+    background: transparent;
+    color: ${({ theme }) => theme.colors.textHeader};
+    filter: brightness(0.85);
   }
 `;
 

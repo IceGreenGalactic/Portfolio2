@@ -3,7 +3,7 @@ export const lightTheme = {
     primary: "#B46B6B",  
     secondary: "#00A8A9",
     background: "#F4F4F4", 
-    text: "#333", 
+    text: "#333333", 
     textLight: "#fff", 
     textHeader: "#222", 
     shadow: "rgba(0, 0, 0, 0.5)", 
