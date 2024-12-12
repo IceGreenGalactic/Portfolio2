@@ -15,8 +15,16 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${(props) => props.theme.background};
     color: ${(props) => props.theme.color};
     transition: all 0.3s ease;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
      min-height: 100vh;
+  }
+
+      h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: ${(props) => props.theme.colors.textHeader};
   }
 
   

@@ -11,6 +11,10 @@ export const lightTheme = {
     buttonText: "#fff", 
     gradient: "linear-gradient(135deg, #00A8A9, #F1A7A0)", 
   },
+  fonts: {
+    body: "'Poppins', sans-serif", 
+    header: "'Montserrat', sans-serif",
+  }
 };
 
 export const darkTheme = {
@@ -26,4 +30,9 @@ export const darkTheme = {
     buttonText: "#fff", 
     gradient: "linear-gradient(135deg, #004F4F, #9C4E63)", 
   },
+
+  fonts: {
+    body: "'Poppins', sans-serif", 
+    header: "'Montserrat', sans-serif", 
+  }
 };

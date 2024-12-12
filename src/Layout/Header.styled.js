@@ -42,10 +42,11 @@ export const NavContainer = styled.nav`
 `;
 
 export const NavItem = styled.a`
-  color: ${({ theme }) => theme.colors.textHeader};
+  color: white;
   text-decoration: none;
   text-transform: uppercase;
   transition: color 0.3s;
+  font-family: ${({ theme }) => theme.fonts.header};
   &:hover {
     color: ${({ theme }) => theme.colors.primary};
   }
