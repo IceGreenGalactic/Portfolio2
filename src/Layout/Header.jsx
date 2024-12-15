@@ -1,5 +1,11 @@
-import React, { useState } from "react";
-import { HeaderContainer, NavContainer, NavItem, ModeButtonContainer } from "./Header.styled";
+import React, { useState, useEffect } from "react";
+import {
+  HeaderContainer,
+  NavContainer,
+  NavItem,
+  ModeButtonContainer,
+} from "./Header.styled";
+import { updateActiveNavOnScroll } from "../components/scrollUtils";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 
@@ -12,9 +18,11 @@ const PortfolioHeader = ({ toggleTheme }) => {
     toggleTheme();
   };
 
-  const handleNavClick = (id) => {
-    setActiveNav(id); 
-  };
+  useEffect(() => {
+    const sections = ["#home", "#projects", "#technologies", "#about"];
+    const cleanup = updateActiveNavOnScroll(sections, setActiveNav);
+    return cleanup;
+  }, []);
 
   return (
     <HeaderContainer>
@@ -39,7 +47,7 @@ const PortfolioHeader = ({ toggleTheme }) => {
                 className={`d-block d-md-flex mt-2 mt-md-0 ${
                   activeNav === "#home" ? "active" : ""
                 }`}
-                onClick={() => handleNavClick("#home")}
+                onClick={() => setActiveNav("#home")}
               >
                 Home
               </NavItem>
@@ -48,7 +56,7 @@ const PortfolioHeader = ({ toggleTheme }) => {
                 className={`d-block d-md-flex mt-2 mt-md-0 ${
                   activeNav === "#projects" ? "active" : ""
                 }`}
-                onClick={() => handleNavClick("#projects")}
+                onClick={() => setActiveNav("#projects")}
               >
                 Projects
               </NavItem>
@@ -57,7 +65,7 @@ const PortfolioHeader = ({ toggleTheme }) => {
                 className={`d-block d-md-flex mt-2 mt-md-0 ${
                   activeNav === "#technologies" ? "active" : ""
                 }`}
-                onClick={() => handleNavClick("#technologies")}
+                onClick={() => setActiveNav("#technologies")}
               >
                 Technologies
               </NavItem>
@@ -66,7 +74,7 @@ const PortfolioHeader = ({ toggleTheme }) => {
                 className={`d-block d-md-flex mt-2 mt-md-0 ${
                   activeNav === "#about" ? "active" : ""
                 }`}
-                onClick={() => handleNavClick("#about")}
+                onClick={() => setActiveNav("#about")}
               >
                 About
               </NavItem>
