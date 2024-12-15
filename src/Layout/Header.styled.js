@@ -34,23 +34,30 @@ export const NavContainer = styled.nav`
       background: ${({ theme }) => theme.colors.primary};
     }
 
-    .navbar-toggler-icon{
-        font-size: 1.4rem;
-
+    .navbar-toggler-icon {
+      font-size: 1.4rem;
     }
   }
 `;
 
 export const NavItem = styled.a`
-  color: white;
+  color: ${({ theme }) => theme.colors.textLight};
   text-decoration: none;
   text-transform: uppercase;
-  transition: color 0.3s;
   font-family: ${({ theme }) => theme.fonts.header};
+  transition: all 0.3s ease;
+
   &:hover {
-    color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.textLight};
+    text-shadow: 0px 0px 5px ${({ theme }) => theme.colors.primary};
+    transform: translateY(-3px);
+  }
+
+  &.active {
+    border-bottom: 3px solid ${({ theme }) => theme.colors.primary};
   }
 `;
+
 export const ModeButtonContainer = styled.button`
   background: transparent;
   color: ${({ theme }) => theme.colors.textLight};

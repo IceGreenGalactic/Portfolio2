@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { slideInFromBottom, slideInFromLeft } from "../animations";
+import { slideInFromLeft } from "../animations";
 
 export const Section = styled.section`
   padding: 3rem 1rem;
@@ -9,16 +9,20 @@ export const Section = styled.section`
 
 export const Card = styled.div`
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: space-between;
   max-width: 900px;
   padding: 20px;
   border-radius: 15px;
   background: ${(props) => props.theme.colors.background};
-  box-shadow: 0 2px 6px ${(props) => props.theme.colors.shadow};
+  box-shadow: 0 0px 6px ${(props) => props.theme.colors.shadow};
   margin: 40px auto;
   animation: ${slideInFromLeft} 0.8s ease-out;
+  &:hover {
+    transform: translateY(-5px);
+      box-shadow: 0 0px 6px ${(props) => props.theme.colors.secondary};
 
+  }
 `;
 
 export const ImageContainer = styled.div`
@@ -54,7 +58,6 @@ export const Buttons = styled.div`
   display: flex;
   justify-content: space-around;
   gap: 5px;
-  
 
   a {
     display: inline-flex;

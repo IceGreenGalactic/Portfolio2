@@ -37,8 +37,10 @@ export const ProfileImage = styled.img`
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 4px 6px ${({ theme }) => theme.colors.shadow};
+  box-shadow: 0 4px 10px ${({ theme }) => theme.colors.shadow};
+    border: 3px solid #fff;
 `;
+
 
 export const HeroText = styled.div`
   flex: 2;

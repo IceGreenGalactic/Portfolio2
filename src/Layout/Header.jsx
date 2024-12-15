@@ -1,21 +1,25 @@
 import React, { useState } from "react";
 import { HeaderContainer, NavContainer, NavItem, ModeButtonContainer } from "./Header.styled";
-import Hero from "../components/Hero/Hero";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 
 const PortfolioHeader = ({ toggleTheme }) => {
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const [activeNav, setActiveNav] = useState("#home");
 
   const handleToggleTheme = () => {
     setIsDarkMode(!isDarkMode);
-    toggleTheme(); 
+    toggleTheme();
+  };
+
+  const handleNavClick = (id) => {
+    setActiveNav(id); 
   };
 
   return (
     <HeaderContainer>
       <NavContainer className="navbar navbar-expand-md navbar-light w-100">
-        <div className="container col-10  col-lg-8 m-auto">
+        <div className="container col-10 col-lg-8 m-auto">
           <button
             className="navbar-toggler"
             type="button"
@@ -27,36 +31,56 @@ const PortfolioHeader = ({ toggleTheme }) => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-         
+
           <div className="collapse navbar-collapse" id="navbarNav">
             <div className="justify-content-evenly w-100 d-block d-md-flex align-items-center">
-              <NavItem className="d-block d-md-flex mt-2 mt-md-0" href="#home">
+              <NavItem
+                href="#home"
+                className={`d-block d-md-flex mt-2 mt-md-0 ${
+                  activeNav === "#home" ? "active" : ""
+                }`}
+                onClick={() => handleNavClick("#home")}
+              >
                 Home
               </NavItem>
               <NavItem
-                className="d-block d-md-flex mt-2 mt-md-0"
                 href="#projects"
+                className={`d-block d-md-flex mt-2 mt-md-0 ${
+                  activeNav === "#projects" ? "active" : ""
+                }`}
+                onClick={() => handleNavClick("#projects")}
               >
                 Projects
               </NavItem>
               <NavItem
-                className="d-block d-md-flex mt-2 mt-md-0"
                 href="#technologies"
+                className={`d-block d-md-flex mt-2 mt-md-0 ${
+                  activeNav === "#technologies" ? "active" : ""
+                }`}
+                onClick={() => handleNavClick("#technologies")}
               >
-                technologies
+                Technologies
               </NavItem>
-              <NavItem className="d-block d-md-flex mt-2 mt-md-0" href="#about">
+              <NavItem
+                href="#about"
+                className={`d-block d-md-flex mt-2 mt-md-0 ${
+                  activeNav === "#about" ? "active" : ""
+                }`}
+                onClick={() => handleNavClick("#about")}
+              >
                 About
               </NavItem>
-              <ModeButtonContainer onClick={handleToggleTheme} className="mt-2 mt-md-0">
-                <FontAwesomeIcon icon={isDarkMode ? faSun : faMoon} size="lg" /> Mode
+              <ModeButtonContainer
+                onClick={handleToggleTheme}
+                className="mt-2 mt-md-0"
+              >
+                <FontAwesomeIcon icon={isDarkMode ? faSun : faMoon} size="lg" />{" "}
+                Mode
               </ModeButtonContainer>
             </div>
           </div>
         </div>
       </NavContainer>
-
-
     </HeaderContainer>
   );
 };
