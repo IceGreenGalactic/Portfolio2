@@ -16,6 +16,12 @@ export const Name = styled.h1`
   color: ${({ theme }) => theme.colors.textHeader};
   margin-bottom: 20px;
   font-family: "Arial", sans-serif;
+    @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+     @media (max-width: 480px) {
+    font-size: 1.5rem;
+  }
 `;
 
 export const HeroContent = styled.div`
