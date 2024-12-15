@@ -76,11 +76,3 @@ export const ModeButtonContainer = styled.button`
     filter: brightness(0.85);
   }
 `;
-
-export const NavLogo = styled.h1`
-  font-size: 2rem;
-  font-weight: bold;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: ${({ theme }) => theme.colors.primary};
-`;
