@@ -55,6 +55,8 @@ export const NavItem = styled.a`
 
   &.active {
     border-bottom: 3px solid ${({ theme }) => theme.colors.primary};
+      max-width:fit-content ;
+
   }
 `;
 
