@@ -46,6 +46,7 @@ export const NavItem = styled.a`
   text-transform: uppercase;
   font-family: ${({ theme }) => theme.fonts.header};
   transition: all 0.3s ease;
+  cursor: pointer;
 
   &:hover {
     color: ${({ theme }) => theme.colors.textLight};
@@ -55,8 +56,7 @@ export const NavItem = styled.a`
 
   &.active {
     border-bottom: 3px solid ${({ theme }) => theme.colors.primary};
-      max-width:fit-content ;
-
+    max-width: fit-content;
   }
 `;
 

@@ -32,10 +32,4 @@ export const Card = styled.div`
     line-height: 1.6;
     margin-bottom: 1.5rem;
   }
-
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Optional */
-  }
-
 `;
