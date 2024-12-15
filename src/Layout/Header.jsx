@@ -18,6 +18,25 @@ const PortfolioHeader = ({ toggleTheme }) => {
     toggleTheme();
   };
 
+  const scrollToSection = (sectionId) => {
+    const section = document.querySelector(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+
+  const handleNavClick = (sectionId) => {
+    setActiveNav(sectionId);
+    scrollToSection(sectionId);
+
+    
+    const navbarCollapse = document.getElementById("navbarNav");
+    if (navbarCollapse.classList.contains("show")) {
+      navbarCollapse.classList.remove("show");
+    }
+  };
+
   useEffect(() => {
     const sections = ["#home", "#projects", "#technologies", "#about"];
     const cleanup = updateActiveNavOnScroll(sections, setActiveNav);
@@ -43,38 +62,34 @@ const PortfolioHeader = ({ toggleTheme }) => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <div className="justify-content-evenly w-100 d-block d-md-flex align-items-center">
               <NavItem
-                href="#home"
                 className={`d-block d-md-flex mt-2 mt-md-0 ${
                   activeNav === "#home" ? "active" : ""
                 }`}
-                onClick={() => setActiveNav("#home")}
+                onClick={() => handleNavClick("#home")}
               >
                 Home
               </NavItem>
               <NavItem
-                href="#projects"
                 className={`d-block d-md-flex mt-2 mt-md-0 ${
                   activeNav === "#projects" ? "active" : ""
                 }`}
-                onClick={() => setActiveNav("#projects")}
+                onClick={() => handleNavClick("#projects")}
               >
                 Projects
               </NavItem>
               <NavItem
-                href="#technologies"
                 className={`d-block d-md-flex mt-2 mt-md-0 ${
                   activeNav === "#technologies" ? "active" : ""
                 }`}
-                onClick={() => setActiveNav("#technologies")}
+                onClick={() => handleNavClick("#technologies")}
               >
                 Technologies
               </NavItem>
               <NavItem
-                href="#about"
                 className={`d-block d-md-flex mt-2 mt-md-0 ${
                   activeNav === "#about" ? "active" : ""
                 }`}
-                onClick={() => setActiveNav("#about")}
+                onClick={() => handleNavClick("#about")}
               >
                 About
               </NavItem>
