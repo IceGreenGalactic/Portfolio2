@@ -7,6 +7,14 @@ export const Section = styled.section`
   color: ${(props) => props.theme.colors.text};
 `;
 
+export const Title = styled.h2`
+  font-size: 2rem;
+  font-weight: 700;
+  color: ${({ theme }) => theme.colors.secondary};
+  margin-bottom: 0.5rem;
+  text-decoration: underline;
+`;
+
 export const Card = styled.div`
   display: flex;
   flex-direction: column;
@@ -20,8 +28,7 @@ export const Card = styled.div`
   animation: ${slideInFromLeft} 0.8s ease-out;
   &:hover {
     transform: translateY(-5px);
-      box-shadow: 0 0px 6px ${(props) => props.theme.colors.secondary};
-
+    box-shadow: 0 0px 6px ${(props) => props.theme.colors.secondary};
   }
 `;
 
@@ -44,12 +51,14 @@ export const ProjectTitle = styled.h2`
   font-size: 1.8rem;
   text-align: center;
   margin: 1rem 0;
+  font-weight: 700;
+  color: ${({ theme }) => theme.colors.primary};
 `;
 
 export const ProjectDescription = styled.p`
   font-size: 1rem;
   text-align: center;
-  margin: 1rem 0 1.5rem 0;
+  margin: 1rem 0rem 0.5rem 0;
   line-height: 1.6;
   color: ${(props) => props.theme.colors.text};
 `;
@@ -101,3 +110,4 @@ export const Buttons = styled.div`
     }
   }
 `;
+
