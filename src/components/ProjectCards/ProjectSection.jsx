@@ -2,6 +2,7 @@ import React from "react";
 import {
   Section,
   Card,
+  Grid,
   ImageContainer,
   PcImage,
   PhoneImage,
@@ -117,9 +118,9 @@ const ProjectSection = () => {
   const schoolProjects = projects.filter((p) => p.id.startsWith("school"));
 
   const ProjectGrid = ({ items }) => (
-    <div className="d-block d-md-flex flex-wrap justify-content-between">
+    <Grid className="m-auto">
       {items.map((project) => (
-        <Card key={project.id} className="col-12 col-md-10 col-lg-5 mb-4">
+        <Card key={project.id}>
           <ImageContainer className="text-center">
             <PcImage
               src={project.pcImage}
@@ -171,7 +172,7 @@ const ProjectSection = () => {
           </Buttons>
         </Card>
       ))}
-    </div>
+    </Grid>
   );
 
   return (
