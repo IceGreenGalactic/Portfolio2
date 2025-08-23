@@ -111,3 +111,22 @@ export const Buttons = styled.div`
   }
 `;
 
+export const TechIconsStyled = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 1rem 0;
+  align-items: center;
+  svg {
+    font-size: 1.2rem;
+    transition: transform 0.2s ease;
+  }
+
+  svg:hover {
+    transform: scale(1.2);
+  }
+
+  .styled-icon {
+    font-size: 1.8rem;
+  }
+`;

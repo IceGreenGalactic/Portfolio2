@@ -10,6 +10,7 @@ import {
   Buttons,
   Title,
 } from "./ProjectSection.styled";
+import TechIcons from "./TechIcons";
 import HolidazePcImage from "../../assets/images/HolidazePc.png";
 import HolidazePhoneImage from "../../assets/images/HolidazePhone.png";
 import EccohPcImage from "../../assets/images/EccohPc.png";
@@ -40,7 +41,7 @@ const ProjectSection = () => {
       githubLink: "https://github.com/IceGreenGalactic/shirkus-website.git",
       pcImage: ShirkusPcImage,
       phoneImage: ShirkusPhoneImage,
-      id: 1,
+      technologies: ["react", "sanity", "styled", "bootstrap"],
     },
     {
       id: "personal-2",
@@ -51,6 +52,7 @@ const ProjectSection = () => {
       githubLink: "https://github.com/Kennel-Editor/Kennel-Shebonemo.git",
       pcImage: ShebonemoPcImage,
       phoneImage: ShebonemoPhoneImage,
+      technologies: ["react", "sanity", "styled", "bootstrap"],
     },
     {
       id: "personal-3",
@@ -62,6 +64,7 @@ const ProjectSection = () => {
       requestAccess: true,
       pcImage: ZizuPcImage,
       phoneImage: ZizuPhoneImage,
+      technologies: ["react", "sanity", "styled"],
     },
     {
       id: "personal-4",
@@ -72,6 +75,7 @@ const ProjectSection = () => {
       githubLink: "https://github.com/IceGreenGalactic/dart.git",
       pcImage: DartPcImage,
       phoneImage: DartPhoneImage,
+      technologies: ["html", "css", "js"],
     },
     {
       id: "school-1",
@@ -83,6 +87,7 @@ const ProjectSection = () => {
         "https://github.com/IceGreenGalactic/ProjectExam2-Holidayz.git",
       pcImage: HolidazePcImage,
       phoneImage: HolidazePhoneImage,
+      technologies: ["react", "styled", "bootstrap"],
     },
     {
       id: "school-2",
@@ -93,6 +98,7 @@ const ProjectSection = () => {
       githubLink: "https://github.com/IceGreenGalactic/webshop-react-CA.git",
       pcImage: EccohPcImage,
       phoneImage: EccohPhoneImage,
+      technologies: ["react", "redux", "styled", "bootstrap"],
     },
     {
       id: "school-3",
@@ -103,6 +109,7 @@ const ProjectSection = () => {
       githubLink: "https://github.com/IceGreenGalactic/semesterProject2.git",
       pcImage: AuctionHousePcImage,
       phoneImage: AuctionHousePhoneImage,
+      technologies: ["html", "sass", "js", "bootstrap"],
     },
   ];
 
@@ -126,6 +133,7 @@ const ProjectSection = () => {
           </ImageContainer>
           <ProjectTitle>{project.title}</ProjectTitle>
           <ProjectDescription>{project.description}</ProjectDescription>
+          <TechIcons technologies={project.technologies} />
           <Buttons>
             {project.liveLink && (
               <a
