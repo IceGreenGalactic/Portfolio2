@@ -16,10 +16,10 @@ export const Name = styled.h1`
   color: ${({ theme }) => theme.colors.textHeader};
   margin-bottom: 20px;
   font-family: "Arial", sans-serif;
-    @media (max-width: 768px) {
+  @media (max-width: 768px) {
     font-size: 2rem;
   }
-     @media (max-width: 480px) {
+  @media (max-width: 480px) {
     font-size: 1.5rem;
   }
 `;
@@ -40,13 +40,13 @@ export const ProfileImageWrapper = styled.div`
 
 export const ProfileImage = styled.img`
   width: 200px;
-  height: 200px;
+  height: 250px;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 4px 10px ${({ theme }) => theme.colors.shadow};
-    border: 3px solid #fff;
+  border: 3px solid #fff;
+  object-position: 60% 0%;
 `;
-
 
 export const HeroText = styled.div`
   flex: 2;

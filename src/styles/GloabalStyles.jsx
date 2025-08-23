@@ -9,11 +9,11 @@ const GlobalStyle = createGlobalStyle`
     transition: all 0.3s ease;
   }
  main{
-    height: 100vh;
+    height: 100vh; 
+   
     }
   body {
-    background-color: ${(props) => props.theme.background};
-    color: ${(props) => props.theme.color};
+        background-color: ${(props) => props.theme.colors.background};
     transition: all 0.3s ease;
     font-family: 'Poppins', sans-serif;
      min-height: 100vh;

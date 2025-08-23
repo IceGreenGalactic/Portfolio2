@@ -3,101 +3,152 @@ import { slideInFromLeft } from "../animations";
 
 export const Section = styled.section`
   padding: 3rem 1rem;
-  background: ${(props) => props.theme.colors.background};
-  color: ${(props) => props.theme.colors.text};
+  background: ${({ theme }) => theme.colors.background};
+  color: ${({ theme }) => theme.colors.text};
+  max-width: 1420px;
+  margin-inline: auto;
+`;
+
+export const Title = styled.h2`
+  font-size: 2rem;
+  font-weight: 700;
+  color: ${({ theme }) => theme.colors.secondary};
+  margin-bottom: 0.5rem;
+  text-decoration: underline;
+`;
+
+export const Grid = styled.div`
+  display: grid;
+  gap: 24px;
+
+  grid-template-columns: 1fr;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 1150px) {
+    grid-template-columns: repeat(3, 1fr);
+
+    & > *:nth-last-child(1):nth-child(3n + 1) {
+      grid-column: 2;
+    }
 `;
 
 export const Card = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 900px;
-  padding: 20px;
+  width: 100%;
+  padding: 16px;
   border-radius: 15px;
-  background: ${(props) => props.theme.colors.background};
-  box-shadow: 0 0px 6px ${(props) => props.theme.colors.shadow};
-  margin: 40px auto;
+  background: ${({ theme }) => theme.colors.background};
+  box-shadow: 0 0px 6px ${({ theme }) => theme.colors.shadow};
   animation: ${slideInFromLeft} 0.8s ease-out;
+
   &:hover {
     transform: translateY(-5px);
-      box-shadow: 0 0px 6px ${(props) => props.theme.colors.secondary};
-
+    box-shadow: 0 0px 6px ${({ theme }) => theme.colors.secondary};
   }
 `;
 
 export const ImageContainer = styled.div`
   margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
 `;
 
 export const PcImage = styled.img`
-  width: 60%;
+  width: 52%;
   height: auto;
   object-fit: contain;
 `;
 
 export const PhoneImage = styled.img`
+  max-width: 20%;
   height: auto;
   object-fit: contain;
 `;
 
 export const ProjectTitle = styled.h2`
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   text-align: center;
-  margin: 1rem 0;
+  margin: 0.75rem 0 0.25rem 0;
+  font-weight: 700;
+  color: ${({ theme }) => theme.colors.primary};
 `;
 
 export const ProjectDescription = styled.p`
-  font-size: 1rem;
+  font-size: 0.95rem;
   text-align: center;
-  margin: 1rem 0 1.5rem 0;
+  margin: 0.5rem 0 0.75rem 0;
   line-height: 1.6;
-  color: ${(props) => props.theme.colors.text};
+  color: ${({ theme }) => theme.colors.text};
 `;
 
 export const Buttons = styled.div`
   display: flex;
-  justify-content: space-around;
-  gap: 5px;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
 
   a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    padding: 0.8rem 1.5rem;
+    padding: 0.75rem 1.25rem;
     font-weight: bold;
-    border-radius: 5px;
-    color: ${(props) => props.theme.colors.buttonText};
-    transition: all 0.3s ease;
-    white-space: noWrap;
+    border-radius: 6px;
+    color: ${({ theme }) => theme.colors.buttonText};
+    transition: all 0.25s ease;
+    white-space: nowrap;
+    font-size: 0.95rem;
 
-    @media (max-width: 320px) {
-      font-size: 14px;
-      padding: 0.6rem 0.8rem;
+    @media (max-width: 360px) {
+      font-size: 0.9rem;
+      padding: 0.6rem 0.9rem;
     }
+
     &:hover {
-      opacity: 0.9;
+      opacity: 0.95;
+      transform: translateY(-1px);
     }
   }
 
   .svg-inline--fa {
-    margin-right: 5px;
+    margin-right: 6px;
   }
 
   .live {
     background: linear-gradient(to right, #3ea2ea, #67cbee);
-
-    &:hover {
-      background: linear-gradient(to right, #1870ae, #2abcf1);
-    }
   }
 
   .github {
     background: linear-gradient(to right, #6e5494, #8f6aa3);
     color: #fff;
+  }
+`;
 
-    &:hover {
-      background: linear-gradient(to right, #4d3c66, #6e4594);
-    }
+export const TechIconsStyled = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 1rem 0;
+  align-items: center;
+
+  svg {
+    font-size: 1.2rem;
+    transition: transform 0.2s ease;
+  }
+
+  svg:hover {
+    transform: scale(1.2);
+  }
+
+  .styled-icon {
+    font-size: 1.8rem;
   }
 `;
