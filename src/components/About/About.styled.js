@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const AboutSection = styled.section`
   background-color: ${({ theme }) => theme.colors.background};
   color: ${({ theme }) => theme.colors.text};
@@ -13,7 +12,6 @@ export const AboutSection = styled.section`
     text-decoration: underline;
   }
 `;
-
 
 export const Card = styled.div`
   max-width: 850px;
