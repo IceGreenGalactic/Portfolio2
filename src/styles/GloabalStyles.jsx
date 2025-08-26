@@ -9,7 +9,9 @@ const GlobalStyle = createGlobalStyle`
     transition: all 0.3s ease;
   }
  main{
-    height: 100vh;
+    height: 100vh; 
+           background-color: ${(props) => props.theme.colors.background};
+
     }
   body {
     background-color: ${(props) => props.theme.background};
