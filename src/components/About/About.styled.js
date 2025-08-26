@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const AboutSection = styled.section`
+  max-width: 1220px;
+  margin-inline: auto;
   background-color: ${({ theme }) => theme.colors.background};
   color: ${({ theme }) => theme.colors.text};
 

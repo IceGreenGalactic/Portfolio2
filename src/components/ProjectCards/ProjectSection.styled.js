@@ -5,12 +5,12 @@ export const Section = styled.section`
   padding: 3rem 1rem;
   background: ${({ theme }) => theme.colors.background};
   color: ${({ theme }) => theme.colors.text};
-  max-width: 1420px;
+  max-width: 1220px;
   margin-inline: auto;
 `;
 
 export const Title = styled.h2`
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   color: ${({ theme }) => theme.colors.secondary};
   margin-bottom: 0.5rem;
@@ -18,21 +18,35 @@ export const Title = styled.h2`
 `;
 
 export const Grid = styled.div`
-  display: grid;
-  gap: 24px;
+  --g: 24px;
 
+  display: grid;
+  gap: var(--g);
   grid-template-columns: 1fr;
 
   @media (min-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
+
+    & > *:nth-child(2n + 1):nth-last-child(-n + 2):last-child {
+      grid-column: 1 / -1;
+      justify-self: center;
+      width: calc((100% - var(--g)) / 2);
+    }
   }
 
   @media (min-width: 1150px) {
     grid-template-columns: repeat(3, 1fr);
 
-    & > *:nth-last-child(1):nth-child(3n + 1) {
+    & > *:nth-child(2n + 1):nth-last-child(-n + 2):last-child {
+      grid-column: auto;
+      justify-self: auto;
+      width: auto;
+    }
+
+    & > *:nth-child(3n + 1):nth-last-child(-n + 3):last-child {
       grid-column: 2;
     }
+  }
 `;
 
 export const Card = styled.div`

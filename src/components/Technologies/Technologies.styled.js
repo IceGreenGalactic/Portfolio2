@@ -4,6 +4,8 @@ export const TechnologiesSection = styled.div`
   background-color: ${({ theme }) => theme.colors.background};
   padding: 50px;
   color: ${(props) => props.theme.colors.text};
+  max-width: 1220px;
+  margin-inline: auto;
 
   h2 {
     font-size: 2rem;
