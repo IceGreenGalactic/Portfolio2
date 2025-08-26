@@ -4,8 +4,10 @@ import Hero from "./components/Hero/Hero";
 import ProjectSection from "./components/ProjectCards/ProjectSection";
 import About from "./components/About/About";
 import Technologies from "./components/Technologies/Technologies";
+import Contact from "./components/Contact/Contact";
 import { lightTheme, darkTheme } from "./styles/Theme";
 import { ThemeProvider } from "styled-components";
+import GlobalStyle from "./styles/GloabalStyles";
 
 function App() {
   const [theme, setTheme] = useState(lightTheme);
@@ -19,11 +21,12 @@ function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
+        <GlobalStyle />
         <Layout toggleTheme={toggleTheme}>
-          <Hero />
           <ProjectSection />
           <Technologies />
           <About />
+          <Contact />
         </Layout>
       </ThemeProvider>
     </>
