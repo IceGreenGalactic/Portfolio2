@@ -32,13 +32,6 @@ const Contact = () => {
             LinkedIn
           </IconLink>
         </ContactItem>
-
-        <ContactItem>
-          <FaGithub size={24} />
-          <IconLink href="https://github.com/dittbrukernavn" target="_blank">
-            GitHub
-          </IconLink>
-        </ContactItem>
       </ContactCard>
     </ContactWrapper>
   );
