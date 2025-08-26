@@ -5,7 +5,7 @@ export const AboutSection = styled.section`
   color: ${({ theme }) => theme.colors.text};
 
   h2 {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 700;
     color: ${({ theme }) => theme.colors.secondary};
     margin-bottom: 3rem;

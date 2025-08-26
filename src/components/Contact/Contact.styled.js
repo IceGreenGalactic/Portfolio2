@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ContactWrapper = styled.section`
-  padding: 4rem 2rem;
+  padding: 4rem 0rem;
   text-align: center;
   background-color: ${({ theme }) => theme.colors.background};
   color: ${({ theme }) => theme.colors.text};

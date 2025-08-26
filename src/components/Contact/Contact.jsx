@@ -10,9 +10,9 @@ import {
 
 const Contact = () => {
   return (
-    <ContactWrapper id="contact" >
+    <ContactWrapper id="contact">
       <h2>Contact Me</h2>
-      <ContactCard className=" col-12 col-sm-10 col-md-8 col-lg-6 m-auto">
+      <ContactCard className=" col-12  col-md-8 col-lg-6 m-auto">
         <ContactItem>
           <MdLocationOn size={24} />
           <span>Sandnes, Norway</span>
@@ -20,7 +20,9 @@ const Contact = () => {
 
         <ContactItem>
           <MdEmail size={24} />
-          <IconLink href="mailto:kristine.tyrholm@gmail.com">Kristine.tyrholm@gmail.com</IconLink>
+          <IconLink href="mailto:kristine.tyrholm@gmail.com">
+            Kristine.tyrholm@gmail.com
+          </IconLink>
         </ContactItem>
 
         <ContactItem>

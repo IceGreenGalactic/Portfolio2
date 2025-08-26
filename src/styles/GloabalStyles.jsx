@@ -11,13 +11,14 @@ const GlobalStyle = createGlobalStyle`
  main{
     height: 100vh; 
            background-color: ${(props) => props.theme.colors.background};
-
+  margin: 0px 20px;
     }
   body {
         background-color: ${(props) => props.theme.colors.background};
     transition: all 0.3s ease;
     font-family: 'Poppins', sans-serif;
      min-height: 100vh;
+   
   }
 
       h1 {

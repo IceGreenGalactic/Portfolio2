@@ -23,7 +23,6 @@ function App() {
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <Layout toggleTheme={toggleTheme}>
-          <Hero />
           <ProjectSection />
           <Technologies />
           <About />

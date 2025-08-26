@@ -6,7 +6,7 @@ const About = () => {
     <AboutSection className="d-block justify-content-center" id="about">
       <h2 className="text-center">Here's a little about me</h2>
 
-      <div className="row justify-content-center col-10 col-md-10 m-auto mb-3">
+      <div className="row justify-content-center col-12 col-md-10 m-auto mb-3">
         <div className="col-12 col-md-6 mb-4 ">
           <Card className="p-3 h-100 d-flex flex-column">
             <h3>🌈 Personal Life</h3>
@@ -35,7 +35,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="row justify-content-center col-10 col-md-10 m-auto">
+      <div className="row justify-content-center col-12 col-md-10 m-auto">
         <div className="col-12 col-md-6 mb-4">
           <Card className="p-3 h-100 d-flex flex-column">
             <h3>🍎 My Career Journey</h3>

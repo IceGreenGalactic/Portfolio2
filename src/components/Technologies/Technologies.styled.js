@@ -18,7 +18,6 @@ export const TechnologiesSection = styled.div`
     gap: 4px;
     margin-top: 6px;
     justify-content: center;
-    
   }
 
   .dot {
@@ -42,6 +41,13 @@ export const TechnologiesGrid = styled.div`
   justify-content: center;
   gap: 22px;
   padding-bottom: 50px;
+
+  @media (max-width: 600px) {
+    display: grid;
+
+    justify-items: center;
+    grid-template-columns: repeat(2, minmax(110px, 1fr));
+  }
 `;
 
 export const TechnologyItem = styled.div`
@@ -51,7 +57,7 @@ export const TechnologyItem = styled.div`
   height: 110px;
   border-radius: 50%;
   box-shadow: 0 1px 10px ${({ theme }) => theme.colors.shadow};
-  
+
   text-align: center;
 
   display: flex;

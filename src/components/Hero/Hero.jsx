@@ -11,11 +11,8 @@ import profileImage from "../../assets/images/portfolioImg.jpg";
 
 const Hero = () => {
   return (
-    <HeroSection
-      className="col-md-10 col-lg-8 m-auto col-11 align-items-center m-auto justify-content-center pt-2 pt-md-0"
-      id="home"
-    >
-      <HeroContent className="d-block d-sm-flex ">
+    <HeroSection id="home">
+      <HeroContent className="d-block d-sm-flex p-4">
         <ProfileImageWrapper>
           <ProfileImage src={profileImage} alt="Profile" />
         </ProfileImageWrapper>

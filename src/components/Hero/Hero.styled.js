@@ -9,7 +9,6 @@ export const HeroSection = styled.section`
   min-height: 50vh;
   text-align: center;
   background: ${({ theme }) => theme.colors.gradient};
-  width: 100%;
 `;
 
 export const Name = styled.h1`
@@ -28,7 +27,7 @@ export const HeroContent = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+
   max-width: 1200px;
 `;
 
