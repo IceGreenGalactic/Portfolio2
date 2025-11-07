@@ -26,6 +26,8 @@ import ZizuPcImage from "../../assets/images/ZizuPc.png";
 import ZizuPhoneImage from "../../assets/images/ZizuPhone.png";
 import DartPcImage from "../../assets/images/DartPc.png";
 import DartPhoneImage from "../../assets/images/DartPhone.png";
+import SoveTidPhoneImage from "../../assets/images/soveTidPhone.png";
+import SoveTidPcImage from "../../assets/images/soveTidPc.png";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -77,6 +79,17 @@ const ProjectSection = () => {
       pcImage: DartPcImage,
       phoneImage: DartPhoneImage,
       technologies: ["html", "css", "js"],
+    },
+    {
+      id: "personal-5",
+      title: "Sovetid",
+      description:
+        "A privacy-friendly PWA built for daily use in my kindergarten. Staff can add children, assign max sleep duration, and start naps instantly or back-date them if they forgot to start on time. The app calculates wake-up time automatically, shows live countdowns, and fires a local notification + alarm when time is up. Runs fully offline and stores everything only in localStorage (no backend) which makes it safe and compliant for childcare use.",
+      liveLink: "https://sovetid.netlify.app/",
+      githubLink: "https://github.com/IceGreenGalactic/SleepCountdown.git",
+      pcImage: SoveTidPcImage,
+      phoneImage: SoveTidPhoneImage,
+      technologies: ["pwa", "html", "css", "js"],
     },
     {
       id: "school-1",
