@@ -24,8 +24,8 @@ import ShebonemoPcImage from "../../assets/images/ShebonemoPc.png";
 import ShebonemoPhoneImage from "../../assets/images/ShebonemoPhone.png";
 import ZizuPcImage from "../../assets/images/ZizuPc.png";
 import ZizuPhoneImage from "../../assets/images/ZizuPhone.png";
-import DartPcImage from "../../assets/images/DartPc.png";
-import DartPhoneImage from "../../assets/images/DartPhone.png";
+import DartPcImage from "../../assets/images/dartGamesPc.png";
+import DartPhoneImage from "../../assets/images/dartGamesPhone.png";
 import SoveTidPhoneImage from "../../assets/images/soveTidPhone.png";
 import SoveTidPcImage from "../../assets/images/soveTidPc.png";
 
@@ -44,7 +44,7 @@ const ProjectSection = () => {
       githubLink: "https://github.com/IceGreenGalactic/shirkus-website.git",
       pcImage: ShirkusPcImage,
       phoneImage: ShirkusPhoneImage,
-      technologies: ["react", "sanity", "styled", "bootstrap"],
+      technologies: ["react", "sanity", "styled", "bootstrap", "netlify"],
     },
     {
       id: "personal-2",
@@ -55,7 +55,7 @@ const ProjectSection = () => {
       githubLink: "https://github.com/Kennel-Editor/Kennel-Shebonemo.git",
       pcImage: ShebonemoPcImage,
       phoneImage: ShebonemoPhoneImage,
-      technologies: ["react", "sanity", "styled", "bootstrap"],
+      technologies: ["react", "sanity", "styled", "bootstrap", "netlify"],
     },
     {
       id: "personal-3",
@@ -67,19 +67,20 @@ const ProjectSection = () => {
       requestAccess: true,
       pcImage: ZizuPcImage,
       phoneImage: ZizuPhoneImage,
-      technologies: ["react", "sanity", "styled"],
+      technologies: ["react", "sanity", "styled", "netlify"],
     },
     {
       id: "personal-4",
       title: "Dart Games",
       description:
-        "A hobby project developed right after my studies, built as a digital scoreboard for dart games. It currently supports two modes: Killer and Around the Clock. While the design is simple, it highlights my ability to translate real-world needs into functional web applications using HTML, CSS, and vanilla JavaScript.",
+        "A personal, mobile-first PWA for tracking scores while playing darts with friends. Supports multiple game modes (501/301, Cricket, Killer, Around the Clock) with dynamic scoring logic, winners/placements, and per-game stats. Built with React + Vite using Zustand for state and styled-components for a responsive, themeable UI.",
       liveLink: "https://dart-games.netlify.app/",
       githubLink: "https://github.com/IceGreenGalactic/dart.git",
       pcImage: DartPcImage,
       phoneImage: DartPhoneImage,
-      technologies: ["html", "css", "js"],
+      technologies: ["react", "styled", "pwa", "netlify"],
     },
+
     {
       id: "personal-5",
       title: "Sovetid",
@@ -89,7 +90,7 @@ const ProjectSection = () => {
       githubLink: "https://github.com/IceGreenGalactic/SleepCountdown.git",
       pcImage: SoveTidPcImage,
       phoneImage: SoveTidPhoneImage,
-      technologies: ["pwa", "html", "css", "js"],
+      technologies: ["pwa", "html", "css", "js", "netlify"],
     },
     {
       id: "school-1",
@@ -101,7 +102,7 @@ const ProjectSection = () => {
         "https://github.com/IceGreenGalactic/ProjectExam2-Holidayz.git",
       pcImage: HolidazePcImage,
       phoneImage: HolidazePhoneImage,
-      technologies: ["react", "styled", "bootstrap"],
+      technologies: ["react", "styled", "bootstrap", "netlify"],
     },
     {
       id: "school-2",
@@ -112,7 +113,7 @@ const ProjectSection = () => {
       githubLink: "https://github.com/IceGreenGalactic/webshop-react-CA.git",
       pcImage: EccohPcImage,
       phoneImage: EccohPhoneImage,
-      technologies: ["react", "redux", "styled", "bootstrap"],
+      technologies: ["react", "redux", "styled", "bootstrap", "netlify"],
     },
     {
       id: "school-3",
@@ -123,7 +124,7 @@ const ProjectSection = () => {
       githubLink: "https://github.com/IceGreenGalactic/semesterProject2.git",
       pcImage: AuctionHousePcImage,
       phoneImage: AuctionHousePhoneImage,
-      technologies: ["html", "sass", "js", "bootstrap"],
+      technologies: ["html", "sass", "js", "bootstrap", "netlify"],
     },
   ];
 

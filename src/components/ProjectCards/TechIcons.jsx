@@ -7,7 +7,13 @@ import {
   faCss3,
   faBootstrap,
 } from "@fortawesome/free-brands-svg-icons";
-import { SiSanity, SiStyledcomponents, SiSass, SiRedux } from "react-icons/si";
+import {
+  SiSanity,
+  SiStyledcomponents,
+  SiSass,
+  SiRedux,
+  SiNetlify,
+} from "react-icons/si";
 import { TechIconsStyled } from "./ProjectSection.styled";
 
 const PwaIcon = () => (
@@ -45,6 +51,7 @@ const techMeta = {
   sass: { icon: SiSass, type: "react", color: "#cc6699" },
   redux: { icon: SiRedux, type: "react", color: "#764abc" },
   pwa: { icon: PwaIcon, type: "react" },
+  netlify: { icon: SiNetlify, type: "react", color: "#00AD9F" },
 };
 
 const TechIcons = ({ technologies = [] }) => {
