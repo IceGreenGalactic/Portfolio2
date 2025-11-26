@@ -5,35 +5,42 @@ import {
   ContactWrapper,
   ContactCard,
   ContactItem,
-  IconLink,
+  SocialButtonRow,
+  SocialButton,
 } from "./Contact.styled.js";
 
 const Contact = () => {
   return (
     <ContactWrapper id="contact">
-      <h2>Contact Me</h2>
-      <ContactCard className=" col-12  col-md-8 col-lg-6 m-auto">
-        <ContactItem>
-          <MdLocationOn size={24} />
-          <span>Sandnes, Norway</span>
-        </ContactItem>
+      <h2>Let’s Connect</h2>
+      <p className="contact-intro">
+        I’d love to connect — whether you’re hiring, have a question, or just
+        want to say hi.
+      </p>
 
-        <ContactItem>
-          <MdEmail size={24} />
-          <IconLink href="mailto:kristine.tyrholm@gmail.com">
-            Kristine.tyrholm@gmail.com
-          </IconLink>
-        </ContactItem>
+      <ContactCard>
+        <SocialButtonRow>
+          <SocialButton href="mailto:kristine.tyrholm@gmail.com">
+            <MdEmail size={20} />
+            <span>Email me</span>
+          </SocialButton>
 
-        <ContactItem>
-          <FaLinkedin size={24} />
-          <IconLink
+          <SocialButton
             href="https://www.linkedin.com/in/kristine-tyrholm-7902172a4/"
             target="_blank"
           >
-            LinkedIn
-          </IconLink>
-        </ContactItem>
+            <FaLinkedin size={20} />
+            <span>LinkedIn</span>
+          </SocialButton>
+
+          <SocialButton
+            href="https://github.com/IceGreenGalactic"
+            target="_blank"
+          >
+            <FaGithub size={20} />
+            <span>GitHub</span>
+          </SocialButton>
+        </SocialButtonRow>
       </ContactCard>
     </ContactWrapper>
   );
