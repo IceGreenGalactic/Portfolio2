@@ -62,3 +62,21 @@ export const HeroText = styled.div`
     margin-bottom: 20px;
   }
 `;
+export const CTAWrapper = styled.div`
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+`;
+
+export const PrimaryButton = styled.a`
+  border-radius: 30px;
+  background: transparent;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s ease;
+  &:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+  }
+`;

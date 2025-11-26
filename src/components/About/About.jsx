@@ -10,14 +10,14 @@ const About = () => {
         <div className="col-12 col-md-6 mb-4 ">
           <Card className="p-3 h-100 d-flex flex-column">
             <h3>🌈 Personal Life</h3>
-            <p>34-year-old and proud parent to an awesome kid.</p>
             <p>
-              Curious, creative, and always on the lookout for new challenges.
+              I’m a parent, a lifelong learner, and someone who loves solving
+              practical problems in creative ways.
             </p>
             <p>
               After 16 rewarding years in the kindergarten sector, I completed
               my Frontend Development studies at Noroff in January 2025 — and
-              I’m now excited to begin my career in tech.
+              I’m now excited to start my journey as a developer.
             </p>
           </Card>
         </div>
@@ -40,18 +40,19 @@ const About = () => {
           <Card className="p-3 h-100 d-flex flex-column">
             <h3>🍎 My Career Journey</h3>
             <p>
-              With a strong background in teaching and pedagogy, I’ve developed
-              skills in communication, planning, and problem-solving. But I also
-              wanted to keep learning and challenge myself creatively. That’s
-              how I discovered frontend development.
+              Working closely with children, parents, and colleagues has given
+              me strong skills in communication, collaboration, and planning.
+              Over the years I’ve also seen firsthand how digital tools can help
+              (or frustrate) everyday work in kindergartens.
             </p>
             <p>
-              During my studies, I started out with C’s, but as my understanding
-              deepened I finished with A’s on my final projects. Coding quickly
-              became something I truly enjoyed — I could sit down in the morning
-              and suddenly realize the whole day had passed. That passion,
-              combined with my educational insight, gives me a unique
-              perspective on building user-friendly, accessible solutions.
+              When I discovered frontend development, it clicked. I loved seeing
+              ideas turn into something real on the screen, and I quickly became
+              hooked. As my understanding grew, my grades improved as well – and
+              I finished my final projects with top marks. That mix of
+              pedagogical insight and a genuine interest in code gives me a
+              strong foundation for building user-friendly, accessible
+              solutions.
             </p>
           </Card>
         </div>
@@ -60,18 +61,21 @@ const About = () => {
           <Card className="p-3 h-100 d-flex flex-column">
             <h3>🚀 Looking Forward</h3>
             <p>
-              I’m eager to contribute to a creative team where I can continue
-              learning while building intuitive and impactful web applications.
+              I’m excited to join a team where I can keep learning, share ideas,
+              and build products that actually help people in their everyday
+              lives.
             </p>
             <p>
-              My goal is to create digital experiences that are both functional
-              and engaging, while always keeping the user in focus. Ideally, I’d
-              love to combine my background in education with tech to build
-              tools that make a difference.
+              I’m especially interested in EdTech and tools for kindergartens
+              and schools, where my background gives me a lot of domain
+              knowledge. At the same time, I’m open to other areas where I can
+              grow as a developer and contribute to thoughtful, intuitive user
+              experiences.
             </p>
             <p>
-              Ready to take on new challenges, I’m excited to grow as a
-              developer and make a difference in the tech industry.
+              I’m ready to take on new challenges, learn from experienced
+              developers, and contribute with both my technical skills and my
+              experience from education.
             </p>
           </Card>
         </div>
