@@ -11,9 +11,10 @@ const About = () => {
           <Card className="p-3 h-100 d-flex flex-column">
             <h3>🌈 Personal Life</h3>
             <p>
-              I’m a parent, a lifelong learner, and someone who loves solving
+              I’m a parent to an awesome kid, a lifelong learner, and someone who loves solving
               practical problems in creative ways.
             </p>
+            <p>I’m based in Sandnes, Norway.</p>
             <p>
               After 16 rewarding years in the kindergarten sector, I completed
               my Frontend Development studies at Noroff in January 2025 — and
