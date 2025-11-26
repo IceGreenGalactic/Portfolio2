@@ -54,6 +54,7 @@ export const Card = styled.div`
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
+  align-self: start; /*only if max 4 points on each card*/
   padding: 16px;
   border-radius: 15px;
   background: ${({ theme }) => theme.colors.background};
@@ -94,12 +95,28 @@ export const ProjectTitle = styled.h2`
   color: ${({ theme }) => theme.colors.primary};
 `;
 
+export const HighlightsList = styled.ul`
+  margin: 0 0 0.75rem 0;
+  padding-left: 1.25rem;
+  list-style-type: circle;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: ${({ theme }) => theme.colors.text};
+  text-align: left;
+`;
 export const ProjectDescription = styled.p`
-  font-size: 0.95rem;
-  text-align: center;
-  margin: 0.5rem 0 0.75rem 0;
+  padding-left: 1.25rem;
+  font-size: 0.9rem;
+  opacity: 0.85;
+
+  text-align: left;
+  margin: 0.5rem 0 1rem 0; /* litt mer nederst */
   line-height: 1.6;
   color: ${({ theme }) => theme.colors.text};
+`;
+
+export const HighlightItem = styled.li`
+  margin-bottom: 0.25rem;
 `;
 
 export const Buttons = styled.div`
@@ -164,5 +181,21 @@ export const TechIconsStyled = styled.div`
 
   .styled-icon {
     font-size: 1.8rem;
+  }
+`;
+export const MoreToggle = styled.button`
+  align-self: flex-start;
+  border: none;
+  background: none;
+  color: ${({ theme }) => theme.colors.secondary};
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  margin-bottom: 0.5rem;
+
+  &:hover {
+    opacity: 0.8;
   }
 `;
